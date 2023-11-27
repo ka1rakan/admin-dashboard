@@ -15,7 +15,7 @@ html{
     box-sizing: border-box;
 }
 body{
-    height:100vh;
+    height: 100vh;
     display:grid;
     grid-template: 1fr 5fr / 1fr 5fr;
     grid-template-areas: 
@@ -156,6 +156,17 @@ body{
     grid-template-rows: auto 1fr;
 }
 
+img{
+    float:right;
+}
+
+.projects .projects-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px;
+}
+
 .projects-grid .project{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -179,13 +190,6 @@ body{
     font-size:2em;
 }
 
-.projects .projects-grid{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 24px;
-}
-
 .announcements{
     grid-area: announcements;
 }
@@ -205,4 +209,10 @@ body{
 .trending div{
     background-color: var(--high-color);
     border-radius: 10px;
+}
+
+.announcements-grid{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
 }
