@@ -204,15 +204,36 @@ img{
     grid-template-rows: auto 1fr;
 }
 
-.projects-grid div,
-.announcements div,
-.trending div{
+.projects-grid>div,
+.announcements>div,
+.trending>div{
     background-color: var(--high-color);
     border-radius: 10px;
 }
 
 .announcements-grid{
+    padding:12px;
+
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3,1fr);
+}
+
+.announcement{
+    padding:12px;
+}
+
+.announcement:nth-child(1),
+.announcement:nth-child(2){
+    border-bottom:1px solid var(--low-color)
+}
+
+.announcement p:nth-child(1){
+    font-size:20px;
+    font-weight: bold;
+}
+
+.announcement p:nth-child(2){
+    font-size:16px;
+    font-weight:100;
 }
