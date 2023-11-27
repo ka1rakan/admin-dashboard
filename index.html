@@ -5,9 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section class="header"></section>
+    <section class="header">
+        <div class="header-upper">
+            <div class="search-box">
+                <label for="search"><i class="bi bi-search"></i></label>
+                <input type="text" name="search" id="search" list="suggestions">
+                <datalist id="suggestions">
+                    <option>Etch-A-Sketch</option>
+                    <option>Calculator</option>
+                    <option>Sign Up Page</option>
+                    <option>Rock Paper Scissors</option>
+                </datalist>
+            </div>
+            <div class="user-box">
+                <i class="bi bi-bell"></i>
+                <i class="bi bi-person-fill"></i>
+                <p>Kairakan</p>
+            </div>
+        </div>
+        <div class="header-lower">
+            <i class="bi bi-person-fill"></i>
+            <div>
+                <p>Hi there,</p>
+                <p>Kairakan (@kair)</p>
+            </div>
+            <div class="button-div">
+                <button type="button" class="btn btn-dark">New</button>
+                <button type="button" class="btn btn-dark">Upload</button>
+                <button type="button" class="btn btn-dark">Share</button>
+            </div>
+        </div>
+    </section>
     <section class="sidebar">
         <div class="logo"><i style="font-size:50px;" class="bi bi-eye-fill"></i>Dashboard</div>
         <div class="nav">
