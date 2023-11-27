@@ -160,10 +160,19 @@ img{
     float:right;
 }
 
+.context>h3{
+    font-size:2rem;
+}
+
+.context>p{
+    font-size:1.5rem;
+}
+
 .projects .projects-grid{
     display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(475px,1fr));
     grid-template-rows: repeat(2, 1fr);
+    grid-auto-rows: 392px;
     gap: 24px;
 }
 
@@ -175,18 +184,21 @@ img{
 }
 
 .project .context{
+    padding:24px;
+
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: start;
+    gap:24px;
 }
 
 .project a{
     align-self: center;
 }
 
-.projects p,
-.announcements p,
-.trending p{
+.projects>p,
+.announcements>p,
+.trending>p{
     font-size:2em;
 }
 
