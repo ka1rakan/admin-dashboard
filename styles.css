@@ -156,6 +156,23 @@ body{
     grid-template-rows: auto 1fr;
 }
 
+.projects-grid .project{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+    padding: 24px;
+}
+
+.project .context{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.project a{
+    align-self: center;
+}
+
 .projects p,
 .announcements p,
 .trending p{
