@@ -1,3 +1,12 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+@font-face {
+    font-family: ubuntu-regular;
+    src: url(../../fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: ubuntu-bold ;
+    src: url(../../fonts/Ubuntu/Ubuntu-Bold.ttf);
+}
 *{
     margin:0;
     padding:0;
@@ -6,7 +15,7 @@
 body{
     height:100vh;
     display:grid;
-    grid-template: 1fr 4fr / 1fr 6fr;
+    grid-template: 1fr 4fr / 1fr 4fr;
     grid-template-areas: 
     "sidebar header"
     "sidebar main-content";
@@ -19,7 +28,36 @@ body{
 
 .sidebar{
     grid-area:sidebar;
-    background-color: green;
+    background-color: rgba(0, 0, 0, 0.92);
+    font-size:24px;
+    padding: 24px;
+    color: #fff;
+    font-family: ubuntu-regular;
+
+    display:grid;
+    grid-template-rows: repeat(3, min-content);
+    gap:60px;
+    justify-content: start;
+
+}
+
+.sidebar .logo{
+    display:flex;
+    align-items:center;
+    font-size: 30px;
+    font-family: ubuntu-bold;
+}
+
+.sidebar .nav ul,
+.sidebar .other ul{
+    list-style: none;
+
+    display:grid;
+    gap:32px;
+}
+
+.sidebar i{
+    margin-right: 25px;
 }
 
 .main-content{
