@@ -1,4 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+
 :root{
     --high-color: #fffeff;
     --medium-color: #e1e7ef;
@@ -13,8 +16,11 @@ html{
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
 }
+
 body{
+
     height: 100vh;
     display:grid;
     grid-template: 1fr 5fr / 1fr 5fr;
