@@ -156,7 +156,7 @@ body{
     grid-template-rows: auto 1fr;
 }
 
-img{
+.project img{
     float:right;
 }
 
@@ -181,6 +181,13 @@ img{
     grid-template-columns: 1fr 1fr;
 
     padding: 24px;
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+.project:hover{
+    -webkit-box-shadow: 0px 0px 27px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 27px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 27px -8px rgba(0,0,0,0.75);
 }
 
 .project .context{
@@ -267,6 +274,7 @@ img{
 
 .account p{
     margin:0;
+    font-size: 1.6rem;
 }
 
 .trending-img{
